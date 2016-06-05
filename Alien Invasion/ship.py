@@ -8,7 +8,7 @@ class Ship():
         #load image to a rectangle
         self.image = pygame.image.load('images/ship.png')
         w,h = self.image.get_size()
-        scale = .15
+        scale = .15 # scale image to 15%
         self.image = pygame.transform.scale(self.image, (int(w * scale), int(h * scale)))
         self.rect = self.image.get_rect()
         self.screen_rect = screen.get_rect()
